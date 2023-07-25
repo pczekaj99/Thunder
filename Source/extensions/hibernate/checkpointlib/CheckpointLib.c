@@ -29,6 +29,16 @@ typedef struct {
     pid_t pid;
 } CheckpointMetaData;
 
+uint32_t MEMCR_Checkpoint(const uint32_t timeout, const pid_t pid, const char data_dir[], const char volatile_dir[])
+{
+
+}
+
+uint32_t MEMCR_Resume(const uint32_t timeout, const pid_t pid, const char data_dir[], const char  volatile_dir[])
+{
+
+}
+
 uint32_t HibernateProcess(const uint32_t timeout, const pid_t pid, const char data_dir[], const char volatile_dir[], void** storage)
 {
     assert(*storage == NULL);
